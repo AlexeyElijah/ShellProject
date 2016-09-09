@@ -8,6 +8,14 @@ task('processDexShell') << {
 
 }
 android {
+    signingConfigs {
+        releaseCfg {
+            keyAlias 'Alexey'
+            keyPassword 'qwe123'
+            storeFile '../Release/shell_apk.keystore'
+            storePassword 'qwe123'
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
     defaultConfig {
@@ -22,8 +30,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
         }
     }
+
+
 
     variantFilter{variant->
     }
