@@ -1,3 +1,6 @@
 # ShellProject
 加壳项目
 
+buildSrc是用来动态合成替换dex的groovy工程,
+apk的buildgradle里面添加了一个task调用上面的groovy工程
+KeApk工程是用来生成shellDex.dex文件的工程.
