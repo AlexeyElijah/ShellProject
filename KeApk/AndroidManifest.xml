@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.acp.main"
+    android:versionCode="85"
+    android:versionName="4.1.5">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+
+    <application
+        android:name="com.acp.shell.ProxyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ph_icon"
+        android:label="KeApk">
+        <meta-data
+            android:name="APPLICATION_CLASS_NAME"
+            android:value="com.acpbase.common.context.AcpApplication" />
+
+
+        <activity
+            android:name="com.aicai.pluginhost.activity.MainActivity"
+            android:label="aicaike">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
